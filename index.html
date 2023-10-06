@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="loja.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>loja de Carro</title>
+</head>
+<body>
+
+    <h1 class="titulo">Loja de Carros</h1>
+    <nav class="navegate">
+        <a class="nav" href="login.html">Login</a>
+        <a class="nav" href="carro.html">Home</a>
+        <a class="nav" href="#">Contato</a>
+        <a class="nav" href="#">Sobre</a>
+    </nav>
+  </div>
+
+  <div class="slideshow">
+    <img class="slide" src="https://images.unsplash.com/photo-1592198084033-aade902d1aae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D&w=1000&q=80" alt="Imagem 1">
+    <img class="slide" src="https://cdn2.tfx.company/images/clickwallpapers-lamborghini-cars-wallpapers-in-4k-img11.jpg" alt="Imagem 2">
+    <img class="slide" src="https://images2.alphacoders.com/901/901982.jpg" alt="Imagem 3">
+  </div><br><br>
+  
+    <script>
+      document.addEventListener("DOMContentLoaded", function(event) {
+        var slides = document.getElementsByClassName("slide"); // Seleciona todos os elementos com a classe "slide" e os armazena em uma variável
+        
+        var currentSlide = 0; // Variável que armazena o índice do slide atual
+        
+        function showSlide() {
+          // Esconde todos os slides
+          for (var i = 0; i < slides.length; i++) {
+            slides[i].classList.remove("active"); // Remove a classe "active" de todos os slides
+          }
+          
+          // Exibe o slide atual
+          slides[currentSlide].classList.add("active"); // Adiciona a classe "active" ao slide atual
+          
+          // Atualiza o índice do slide atual
+          currentSlide++; // Incrementa o índice do slide atual
+          if (currentSlide >= slides.length) {
+            currentSlide = 0; // Volta ao primeiro slide se atingir o limite
+          }
+          
+          // Chama a função showSlide() novamente após 3 segundos
+          setTimeout(showSlide, 3000); // Define um intervalo de 3 segundos para a próxima chamada da função
+        }
+        
+        // Inicia o slideshow
+        showSlide();
+      });
+      
+       </script>
+
+<div class="pesquisa"> 
+  <form><center>
+    <input class="pes" type="text" placeholder="Pesquise aqui:"> </form>
+    <i class="fa fa-search"></i></center> 
+  </div><br><br>
+
+
+<div class="div_tabela">
+<table border="1" >
+<tr>
+  <th>Esportivos</th>
+  <th>Luxo</th>
+  <th>Casual</th>
+  <th>Retrôs</th>
+</tr>
+
+<tr>
+
+  <td><img src="https://garagem360.com.br/wp-content/uploads/2023/02/Bugatti-Divo-3.jpg" alt="Imagem"><br> 
+    <h2>Bugatti Divo</h2>
+    <h3>R$ 30 Milhões</h3>
+    <h4><button class="Comprar">Comprar</button></h4>
+  </td>
+
+  <td><img src="https://garagem360.com.br/wp-content/uploads/2023/02/Bugatti-Centodieci-2.jpg" alt="Imagem"><br> 
+  <h2>Bugatti Centodiecci</h2>
+  <h3>R$ 46 Milhões</h3>
+  <h4><button class="Comprar">Comprar</button></h4>
+  </td>
+
+  <td><img src="https://s2.glbimg.com/bobPASnuAjnCvJZDFnLOyui5d-Y=/696x390/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_cf9d035bf26b4646b105bd958f32089d/internal_photos/bs/2022/A/b/FDD32ASB29VfZUs123FQ/esda.jpg" alt="Imagem"><br> 
+    <h2>Honda Civic</h2>
+    <h3>R$ 244.900 </h3>
+    <h4><button class="Comprar">Comprar</button></h4>
+    </td>
+
+  <td><img src="https://images6.alphacoders.com/317/317658.jpg" alt="Imagem"><br> 
+      <h2>Chevrolet Camaro</h2>
+      <h3>R$ 202.900 </h3>
+      <h4><button class="Comprar">Comprar</button></h4>
+      </td>
+
+</tr>
+
+<tr>
+
+  <td><img src="https://cdn.motor1.com/images/mgl/oe4Al/s3/2020-audi-r8-rwd.webp" alt="Imagem">
+    <h2>Audi R8</h2>
+    <h3>R$1 Milhão</h3>
+    <h4><button class="Comprar">Comprar</button></h4>
+  </td>
+
+  <td><img src="https://uploads.diariodopoder.com.br/2022/12/72ad6b69-2batch_2batch_rrv_23my_p400e_phev-1.jpg" alt="Imagem">
+    <h2>Land Rover Velar</h2>
+    <h3> R$ 639.950</h3>
+    <h4><button class="Comprar">Comprar</button></h4>
+  </td>
+
+  <td><img src="https://revistacarro.com.br/wp-content/uploads/2022/01/COROLLA-ALTIS-PREMIUM-HYBRID-2.jpg" alt="Imagem">
+    <h2>Toyota Corolla</h2>
+    <h3>R$ 150.800</h3>
+    <h4><button class="Comprar">Comprar</button></h4>
+  </td>
+
+  <td><img src="https://fotos.jornaldocarro.estadao.com.br/uploads/2018/06/30151604/41545551-1160x773.jpg" alt="Imagem">
+      <h2>Volkswagen Fusca</h2>
+      <h3>R $40.000</h3>
+      <h4><button class="Comprar">Comprar</button></h4>
+  </td>
+
+</tr>
+
+<tr>
+
+  <td><img src="https://cdn.awsli.com.br/600x700/2459/2459715/produto/167376847/e3ff38550d.jpg" alt="Imagem">
+    <h2>Porshe 911</h2>
+    <h3>R$ 1 Milhão</h3>
+    <h4><button class="Comprar">Comprar</button></h4>
+  </td>
+
+  <td><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi3O0cadRmXuJtPJ-xrq9kGHcTNaVXreJl60YOd2VTaC0w2o4X8mLJZtA0WEHV9IYv0DwExWlS-KfuJhDbO1QHfGhdCE4W-9VJQLk8B0DHCXF7SJEf8r31sZyR1NKi4KDr2lDEhTBjv-Ej4a11UU_5di5dinYeFzr50jbdIe7v8SrmhTHvgF8u1CwW6eA/s2560/rolls-royce_phantom_1.png.jpg" alt="Imagem">
+    <h2>Rolls-Royce</h2>
+    <h3> R$ 6 Milhões</h3>
+    <h4><button class="Comprar">Comprar</button></h4>
+  </td>
+
+  <td><img src="https://s2.glbimg.com/gsgA8olyKSYzXqt0K5UhYyAJJKw=/72x255:1235x877/924x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_cf9d035bf26b4646b105bd958f32089d/internal_photos/bs/2022/O/y/5hONPPTD2PvpiuGEOrOw/mercedes-benz-a-klasse-amg-line-sedan-30.jpg" alt="Imagem">
+    <h2>Mercedes Classe A</h2>
+    <h3>R$ 300.000</h3>
+    <h4><button class="Comprar">Comprar</button></h4>
+  </td>
+
+  <td><img src="https://quatrorodas.abril.com.br/wp-content/uploads/2018/11/chr5804-cr2.jpg?quality=70&strip=info&w=1024&resize=1200,800" alt="Imagem">
+      <h2>Chevrolet Opala</h2>
+      <h3>R$38.000</h3>
+      <h4><button class="Comprar">Comprar</button></h4>
+  </td>
+
+</tr>
+
+
+<tr>
+
+  <td><img src="https://1.bp.blogspot.com/-Od6j-WL_MJw/VCQr6daP1nI/AAAAAAAB3Y0/3IHaT53bluE/s1600/Lamborghini-Huracan-Brasil%2B(5).jpeg" alt="Imagem">
+    <h2>Lamborghini Uracán</h2>
+    <h3>R$ 2 Milhões</h3>
+    <h4><button class="Comprar">Comprar</button></h4>
+  </td>
+
+  <td><img src="https://quatrorodas.abril.com.br/wp-content/uploads/2022/05/BMW-Serie-3-2023-7.jpg?quality=70&strip=info" alt="Imagem">
+    <h2>BMW Serie 3</h2>
+    <h3> R$ 350.000</h3>
+    <h4><button class="Comprar">Comprar</button></h4>
+  </td>
+
+  <td><img src="https://revistacarro.com.br/wp-content/uploads/2021/04/Fiat-Toro-Ultra_1.jpg" alt="Imagem">
+    <h2>Fiat Toro</h2>
+    <h3>R$ 120.000</h3>
+    <h4><button class="Comprar">Comprar</button></h4>
+  </td>
+
+  <td><img src="https://cdn.motor1.com/images/mgl/q39Ev/s1/1968-dodge-charger-hellephant.webp" alt="Imagem">
+      <h2>Dodge Changer</h2>
+      <h3>R$ 400.000</h3>
+      <h4><button class="Comprar">Comprar</button></h4>
+  </td>
+
+
+
+
+</table></div>
+
+</body>
+</html>
+

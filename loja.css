@@ -1,0 +1,193 @@
+/* Reset default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global styles */
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Page title */
+.titulo {
+    background-color: rgb(14, 149, 202);
+    text-align: center;
+    color: aliceblue;
+    font-size: 60px;
+}
+
+/* Navigation links */
+.nav {
+    padding: 0 20px; /* Adjust padding for left and right */
+    font-size: x-large;
+    border: 2px double aliceblue;
+    border-radius: 10px;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+/* Navigation bar */
+.navegate {
+    background-color: rgb(14, 149, 202);
+    width: 96%;
+    padding: 30px;
+    text-align: center;
+    border: 2px double aliceblue;
+}
+
+/* Hover effect for navigation links */
+.nav:hover {
+    color: rgb(91, 118, 122);
+}
+
+/* Slideshow container */
+.slideshow {
+    width: 100%;
+    height: 850px;
+    overflow: hidden;
+    position: relative;
+    border: 2px solid rgb(35, 39, 40);
+}
+
+/* Slideshow images */
+.slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Active slide */
+.slide.active {
+    opacity: 1;
+}
+
+/* Table header styles */
+th {
+    background-color: white;
+    font-size: larger;
+}
+
+/* Image styles with hover effect */
+img {
+    width: 370px;
+    height: 370px;
+    transition: transform 0.5s;
+    cursor: pointer;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+/* Table styles */
+table {
+    height: 80%;
+    width: 100%;
+    margin-top: 40px;
+    border-collapse: collapse; /* Add this to collapse borders */
+}
+
+/* Heading styles */
+h2 {
+    text-align: center;
+    font-style: initial;
+    border: 1px solid;
+    background-color: white;
+}
+
+h3 {
+    padding-right: 200px;
+    padding-left: 10px;
+    background-color: white;
+}
+
+h4 {
+    margin-top: -20px;
+    padding-left: 140px;
+    background-color: white;
+}
+
+/* Buy button styles */
+.Comprar {
+    width: 100%;
+    border-radius: 81px;
+    font-style: italic;
+}
+
+.Comprar:hover {
+    background-color: rgb(23, 178, 5);
+    transition: 0.5s;
+    opacity: 0.7;
+}
+
+/* Search bar styles */
+.pesquisa {
+    width: 100%;
+    height: 60px;
+    background-color: white;
+}
+
+.pes {
+    width: 800px;
+    height: 40px;
+    margin-top: 8px;
+    border: groove 2px;
+    border-radius: 20px;
+    border-color: black;
+}
+
+/* Table container styles */
+.div_tabela {
+    background-color: black;
+}
+
+/* Login page background */
+.bdlogin {
+    background-color: rgb(65, 55, 55);
+    margin: 0;
+}
+
+/* Login form container */
+.Login {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(rgb(14, 149, 202), white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    width: 300px;
+    height: 300px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#h1Login {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Input field styles */
+.usuario {
+    width: 100%;
+    height: 40px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* Login button styles */
+#entrar {
+    border: 2px solid black;
+    width: 100%;
+    height: 40px;
+}
